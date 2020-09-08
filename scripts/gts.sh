@@ -56,9 +56,9 @@ case "$IP_ADDRESS" in
         ip route add 10.1.12.0/24 dev switch
         # SIDN
         ip link add link enp5s0f0 name sidn type vlan id 40
-        ip addr add 10.1.2.1 dev sidn
+        ip addr add 10.1.3.1 dev sidn
         ip link set dev sidn up
-        ip route add 10.1.2.0/24 dev sidn
+        ip route add 10.1.3.0/24 dev sidn
         # DFN
         ip link add link enp5s0f0 name dfn type vlan id 26
         ip addr add 10.1.10.1 dev dfn
@@ -81,9 +81,9 @@ case "$IP_ADDRESS" in
         # EXTERNAL LINKS
         # SIDN
         ip link add link enp5s0f0 name sidn type vlan id 34
-        ip addr add 10.1.3.1 dev sidn
+        ip addr add 10.1.2.1 dev sidn
         ip link set dev sidn up
-        ip route add 10.1.3.0/24 dev sidn
+        ip route add 10.1.2.0/24 dev sidn
         # VIRTUAL WALL
         ip link add link enp5s0f0 name vwall type vlan id 25
         ip addr add 10.1.7.1 dev vwall
