@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
+# Tool to generate the local configuration setup script can be found at https://github.com/fin-ger/gts-port-cfg
 # curl -L https://github.com/fin-ger/gts-port-cfg/releases/download/v0.4.0/gts-port-cfg --output /tmp/gts-port-cfg && curl https://raw.githubusercontent.com/fin-ger/gts-port-cfg/master/data/dfn-scionlab.yml --output /tmp/scion.yml && chmod +x /tmp/gts-port-cfg && /tmp/gts-port-cfg /tmp/scion.yml | bash
+# The resut of this can be found from lines 7-94
 
 IP_ADDRESS=$(ip -f inet addr show ens7 | sed -En -e 's/.*inet ([0-9.]+).*/\1/p')
 
