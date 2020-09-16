@@ -22,6 +22,7 @@ The generation is configuration driven , an example can be found below. The gene
 testbed:
   id: <String>
   description: <String>
+  network: <ip-address>
   hosts:
     - hostname: <String>
       ip: <ip-address>
@@ -81,9 +82,28 @@ testbed:
   You'll see a textfield in which you can copy your configuration.
   ![DFN Add tab](../img/dfn0.png)
 
+  Insert the output of `gts-port-cfg` into the text field (here the example from above will be used again)
+  
+  ![DFN Add config](../img/dfn1.png)
+  
+  Click submit and you'll get referred to the `Types` tab again, with the new configuration in place now.
+  
+  ![DFN Type tab](../img/dfn2.png)
+  
+  Reserve the resources and wait for them to get allocated. The allocated testbed can then be found in the `Testbeds` tab.
+
+  When all the machines are running, indicated by the `Status` in the testbed information, you are free to proceed to the next section.
+  
+  ![DFN Active testbed](../img/dfn3.png)
+  
+  
 > TODO
 
 ## Configure DFN Machines
+
+### Retrieve the assigend IPs
+
+To get all the assigned IPs, you'll need to connect via the provided VNC interface to every host.
 
 ### Connect to the DFN VPN
 
