@@ -20,21 +20,69 @@ When login succeeds an empty jFed window should open up.
 
 ![jFed Startup](../img/jfed02.png)
 
-Now, open up the [ScionLab VirtualWall default configuration](../deployments/virtualwall.rspec) by clicking on `Open Local` in the toolbar. If successful, the following network configuration should show up:
+## Load the Testbed and Run it
+
+In order to load up and run an experiment, open up the [ScionLab VirtualWall default configuration](../deployments/virtualwall.rspec) by clicking on `Open Local` in the toolbar. If successful, the following network configuration should show up:
 
 ![jFed ScionLab Configuration](../img/jfed03.png)
 
-!!! important "TODO"
+To run the configuration, click on `Run` and set an experiment name.
 
-## Load the Testbed and Run it
+![jFed Run Button](../img/jfed06.png)
 
-!!! important "TODO"
+![jFed Run Experiment](../img/jfed05.png)
+
+!!! important "Tip"
+    Always use a different experiment name to avoid hiccups with the jFed tooling.
+
+It may take up to 15 minutes for an experiment to fully start. Take a coffee and be patient.
+
+After some time all nodes and edges should eventually become green.
+
+![jFed Successful Experiment](../img/jfed04.png)
+
+### View the Status of an Already Running Experiment
+
+In jFed you can recover a running experiment by selecting the `Recover` button in the `General` tab. Select the desired experiment and start recovering it.
+
+![jFed Recover Button](../img/jfed07.png)
+
+![jFed Recover Experiment](../img/jfed08.png)
+
+It will take a couple of minutes to query the status of a running experiment. Take a coffee and be patient.
+
+![jFed Recovering Experiment](../img/jfed09.png)
 
 ## Configure VirtualWall Machines
 
-!!! important "TODO"
+To access a running machine, right-click on the node in the topology viewer and select `Open SSH terminal`. If this is not working, select `Show Node Info` and copy the contents of the `SSH` field into your terminal.
+
+![jFed Node Info](../img/jfed10.png)
+
+If you would like to access the machines over one of the external links to GTS or Grid5000, ssh on the machines with the `scionlab` user and the IP addresses provided in the [ScionLab Topology Overview](https://fin-ger.github.io/scionlab-fed4fire-topology/). The authentication is based on your public SSH key. If you don't have access to the machines but believe you should be able to access them, contact the ScionLab administrators.
 
 ## Updating a VirtualWall Machine
 
-!!! important "TODO"
+When right-clicking on a node in the `Topology Editor` you can configure a node's properties.
 
+![jFed Node Properties](../img/jfed11.png)
+
+By clicking on the `+` next to the `Disk Image` field, you can choose a different GNU/Linux distribution for your node.
+
+![jFed Disk Image Selection](../img/jfed12.png)
+
+Alternatively, you can just run the normal distribution upgrade tools for your preferred GNU/Linux distribution.
+
+!!! important "TODO"
+    The machines survive a reboot, right?
+
+## Creating Your Own Custom Testbed Configuration
+
+!!! important "TODO"
+    List common pitfalls here
+
+ - configuration of Grid5000 nodes is not possible from within jFed as VLAN stitching is not supported via the Fed4Fire API
+ - Stitching links to any other locations but VirtualWall1 or VirtualWall2 and external network edges is mostly not working
+ - It is possible to create stitched links via a single VLAN to the ExoGeni nodes in UvA
+    - However, no further connection is possible in UvA via jFed
+ - InstaGeni nodes cannot be connected to any other testbed

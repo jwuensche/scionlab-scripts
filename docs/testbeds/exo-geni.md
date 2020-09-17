@@ -115,7 +115,11 @@ You can set the GNU/Linux distribution release under `Edit Properties...` in the
 
 Alternatively, you can follow the instructions for a distribution upgrade from your preferred GNU/Linux distribution.
 
-You can access the machines via SSH with the `scionlab` user over the link to VirtualWall. Please refer to the corresponding IP addresses in the [ScionLab Topology Overview](https://fin-ger.github.io/scionlab-fed4fire-topology/).
+You can access the machines via SSH with the `scionlab` user over the link to VirtualWall. Please refer to the corresponding IP addresses in the [ScionLab Topology Overview](https://fin-ger.github.io/scionlab-fed4fire-topology/). The authentication is based on your public SSH key. If you don't have access to the machines but believe you should be able to access them, contact the ScionLab administrators.
 
 !!! important "TODO"
     Check if ExoGeni machines survive a reboot
+
+## Creating Your Own Custom Testbed Configuration
+
+Currently the only location capable of accessing the required VLANs 1065 - 1069 is RENCI / Chapel Hill. All other locations will not work, unless communicated otherwise by the Fed4Fire administrators. Stitching links from RENCI / Chapel Hill to other ExoGeni hosts is also currently not possible. Therefore, the provided ScionLab configuration is the only viable option, for the time being.

@@ -59,3 +59,7 @@ A full introduction for the BMS available is online at the [GTS Wiki](https://wi
 ## Updating a GTS Machine
 
 !!! important "TODO"
+
+## Create Your Own Custom Testbed Configuration
+
+!!! important "TODO"
