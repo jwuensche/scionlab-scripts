@@ -8,7 +8,8 @@ scripts for use on the machines.  This short manual will explain the basic steps
 
 Registration can be completed via the [DFN webpage](https://dfn-gvs.de/login#register) and have to be part of the SCIONLab.
 
-> For further information what you require ask the current maintainer of the fed4fire SCIONLab project.
+!!! info
+    For further information what you require ask the current maintainer of the fed4fire SCIONLab project.
 
 ## Generate a Testbed Configuration
 
@@ -97,7 +98,7 @@ testbed:
   ![DFN Active testbed](../img/dfn3.png)
   
   
-> TODO
+!!! TODO
 
 ## Configure DFN Machines
 
@@ -109,14 +110,15 @@ To get all the assigned IPs, you'll need to connect via the provided VNC interfa
 
 For the initial setup it is required to connect to the machines via the maintenance network. The connection information can be found in the information field in GVS on the top right.
 
-> [Be aware that the VPN uses `PPTP`, the protocol is inherently insecure.](https://wiki.archlinux.org/index.php/PPTP_Client)
+!!! warning
+    [Be aware that the VPN uses `PPTP`, the protocol is inherently insecure.](https://wiki.archlinux.org/index.php/PPTP_Client)
 
 ```bash
 $ pptpsetup --create dfn --server <DFN IP> --username scionlab --password <DFN password> --encrypt
 ```
 
-> TODO
+!!! TODO
 
 ## Updating a DFN Machine
 
-> TODO
+!!! TODO

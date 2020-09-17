@@ -1,19 +1,19 @@
 # GTS
 
-> TODO
+!!! TODO
 
 ## Create a GTS Account
 
-> TODO
+!!! TODO
 
 ## GTS Server Setup
 
-> TODO
+!!! TODO
 
 ## Configure GTS Machines
 
-> TODO
+!!! TODO
 
 ## Updating a GTS Machine
 
-> TODO
+!!! TODO
