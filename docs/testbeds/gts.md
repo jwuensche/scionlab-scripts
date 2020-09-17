@@ -5,7 +5,7 @@ deployment is now different than DFN. This tutorial will take you through the
 steps to create bare metal servers in GTS GÉANT and configure them to run a
 basic OS.
 
-!!! tldr "TL;DR"
+!!! note "TL;DR"
     The setup of the GTS GÉANT is by far the most manual network of them all, a
     lot has to be cleared with the operators if a completely new setup is to be
     made. We'll try to introduce you here to the basic process how we worked
@@ -47,7 +47,7 @@ Table showing the current VLANs between the BMS in Amsterdam, Hamburg, and Paris
 
 A full introduction for the BMS available is online at the [GTS Wiki](https://wiki.geant.org/display/gn43wp7/GTS+User+Guide+v7.0%2C+rev.01#GTSUserGuidev7.0,rev.01-BareMetalServer(BMS))
 
-!!! hint "Account Requirement"
+!!! note "Account Requirement"
     The GTS Wiki requires you to sign into an acount to be able to access it,
     you can do that either with your institution account or public accounts such
     as bitbucket or google.
