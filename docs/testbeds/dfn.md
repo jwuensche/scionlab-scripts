@@ -8,7 +8,7 @@ scripts for use on the machines.  This short manual will explain the basic steps
 
 Registration can be completed via the [DFN webpage](https://dfn-gvs.de/login#register) and have to be part of the SCIONLab.
 
-!!! info
+!!! note "Info"
     For further information what you require ask the current maintainer of the fed4fire SCIONLab project.
 
 ## Generate a Testbed Configuration
@@ -98,7 +98,7 @@ testbed:
   ![DFN Active testbed](../img/dfn3.png)
   
   
-!!! TODO
+!!! important "TODO"
 
 ## Configure DFN Machines
 
@@ -117,8 +117,8 @@ For the initial setup it is required to connect to the machines via the maintena
 $ pptpsetup --create dfn --server <DFN IP> --username scionlab --password <DFN password> --encrypt
 ```
 
-!!! TODO
+!!! important "TODO"
 
 ## Updating a DFN Machine
 
-!!! TODO
+!!! important "TODO"

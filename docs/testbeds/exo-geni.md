@@ -66,13 +66,16 @@ To configure the duration for which the experiment should run, go to `Configure 
 
 ![Flukes Duration Configuration](../img/flukes04.png)
 
+!!! important "Tip"
+    Have a look at [https://fedmon.fed4fire.eu/overview/](https://fedmon.fed4fire.eu/overview/) to check which testbeds are up and running.
+
 To run your experiment first give it a name and then click on `Slice Operations` / `Submit Changes`.
 
 ![Flukes Run](../img/flukes05.png)
 
 After the changes got submitted, Flukes will try to get the resources up and ready. To view the progress on this, click on `My Slices` and select your slice and hit `Query`.
 
-!!! info
+!!! note "Info"
     You can also use the `Query` feature of Flukes to check the status of any runing slice you have access to.
 
 ![Flukes Query](../img/flukes07.png)
@@ -97,10 +100,10 @@ If something fails, contact the Fed4Fire support (contact provided by David).
 
 ## Configure Flukes Machines
 
-!!! TODO
+!!! important "TODO"
     scionlab user creation script with authorized_keys.
 
-!!! Error
+!!! danger "Attention"
     Wait for Brecht to fix machines in NC, USA.
     Currently, the openstack controller is down and spin up of new VMs is not possible.
 
@@ -114,5 +117,5 @@ Alternatively, you can follow the instructions for a distribution upgrade from y
 
 You can access the machines via SSH with the `scionlab` user over the link to VirtualWall. Please refer to the corresponding IP addresses in the [ScionLab Topology Overview](https://fin-ger.github.io/scionlab-fed4fire-topology/).
 
-!!! TODO
+!!! important "TODO"
     Check if ExoGeni machines survive a reboot

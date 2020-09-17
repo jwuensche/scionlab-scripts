@@ -1,19 +1,19 @@
 # GTS
 
-!!! TODO
+!!! important "TODO"
 
 ## Create a GTS Account
 
-!!! TODO
+!!! important "TODO"
 
 ## GTS Server Setup
 
-!!! TODO
+!!! important "TODO"
 
 ## Configure GTS Machines
 
-!!! TODO
+!!! important "TODO"
 
 ## Updating a GTS Machine
 
-!!! TODO
+!!! important "TODO"
