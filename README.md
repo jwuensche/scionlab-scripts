@@ -29,7 +29,7 @@ $ pip install --user mkdocs
 # apt install mkdocs
 ```
 
-The run the following command to get a live-update in your browser while you are typing the documentation.
+Then run the following command to get a live-update in your browser while you are typing the documentation.
 
 ```
 $ cd project/path/
