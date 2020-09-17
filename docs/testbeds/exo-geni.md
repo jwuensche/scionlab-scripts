@@ -54,7 +54,7 @@ When everything is properly setup, Flukes should finally open with an empty scre
 
 ![Flukes Startup](../img/flukes01.png)
 
-Now, download the [default ScionLab Flukes configuration](../deployments/flukes.ndl) and load it into Flukes like this:
+Now, download the [default ScionLab ExoGeni configuration](../deployments/exogeni.ndl) and load it into Flukes like this:
 
 ![Flukes Open Request](../img/flukes02.png)
 
