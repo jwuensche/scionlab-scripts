@@ -8,7 +8,7 @@ Welcome to the ScionLab Testbed Documentation! This documentation covers how to 
  - [DFN (via DFN-GVS)](./testbeds/dfn.md)
  - [GTS GÉANT (bare metal servers managed directly by the GÉANT admins)](./testbeds/gts.md)
 
-The documentation covers the initial account creation, tooling setup for GNU/Linux machines, testbed deployment, and machine preparation to fit the requirements of the ScionLab administrators. Additionally, the basic steps are outlines to perform a system upgrade on the testbeds machines.
+The documentation covers the initial account creation, tooling setup for GNU/Linux machines, testbed deployment, and machine preparation to fit the requirements of the ScionLab administrators. Additionally, the basic steps are outlined to perform a system upgrade on the testbeds machines.
 
 ## Topology Overview
 
