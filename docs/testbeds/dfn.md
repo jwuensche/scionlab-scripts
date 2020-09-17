@@ -66,7 +66,7 @@ testbed:
       location: ams
       flavor: c4r4h20
     - hostname: node3
-      ip: 172.16.0.106
+ip: 172.16.0.106
       location: ham
       image: FreeBSD-11.qcow2
     - hostname: node4
