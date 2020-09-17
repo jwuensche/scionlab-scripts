@@ -57,6 +57,9 @@ It will take a couple of minutes to query the status of a running experiment. Ta
 
 To access a running machine, right-click on the node in the topology viewer and select `Open SSH terminal`. If this is not working, select `Show Node Info` and copy the contents of the `SSH` field into your terminal.
 
+!!! warning
+    Please note that when using this method you **must** have access to IPv6 addresses, as the VirtualWall servers are only accessible over IPv6. Alternatively, you can use an IPv4 proxy to access the nodes by setting it in the jFed preferences. See the [jFed documentation](https://doc.fed4fire.eu/firstexperiment.html) for details.
+
 ![jFed Node Info](../img/jfed10.png)
 
 If you would like to access the machines over one of the external links to GTS or Grid5000, ssh on the machines with the `scionlab` user and the IP addresses provided in the [ScionLab Topology Overview](https://fin-ger.github.io/scionlab-fed4fire-topology/). The authentication is based on your public SSH key. If you don't have access to the machines but believe you should be able to access them, contact the ScionLab administrators.
