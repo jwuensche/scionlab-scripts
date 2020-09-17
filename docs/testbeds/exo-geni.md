@@ -72,6 +72,9 @@ To run your experiment first give it a name and then click on `Slice Operations`
 
 After the changes got submitted, Flukes will try to get the resources up and ready. To view the progress on this, click on `My Slices` and select your slice and hit `Query`.
 
+!!! info
+    You can also use the `Query` feature of Flukes to check the status of any runing slice you have access to.
+
 ![Flukes Query](../img/flukes07.png)
 ![Flukes Slice Selection](../img/flukes08.png)
 ![Flukes Query Status](../img/flukes10.png)
@@ -97,6 +100,10 @@ If something fails, contact the Fed4Fire support (contact provided by David).
 !!! TODO
     scionlab user creation script with authorized_keys.
 
+!!! Error
+    Wait for Brecht to fix machines in NC, USA.
+    Currently, the openstack controller is down and spin up of new VMs is not possible.
+
 ## Updating a Flukes Machine
 
 You can set the GNU/Linux distribution release under `Edit Properties...` in the context menu of all machine nodes in the request graph of Flukes.
@@ -106,3 +113,6 @@ You can set the GNU/Linux distribution release under `Edit Properties...` in the
 Alternatively, you can follow the instructions for a distribution upgrade from your preferred GNU/Linux distribution.
 
 You can access the machines via SSH with the `scionlab` user over the link to VirtualWall. Please refer to the corresponding IP addresses in the [ScionLab Topology Overview](https://fin-ger.github.io/scionlab-fed4fire-topology/).
+
+!!! TODO
+    Check if ExoGeni machines survive a reboot
