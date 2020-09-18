@@ -1,0 +1,6 @@
+[NetDev]
+Name=grid5000
+Kind=vlan
+
+[VLAN]
+Id=1390

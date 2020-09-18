@@ -1,0 +1,6 @@
+[NetDev]
+Name=ham
+Kind=vlan
+
+[VLAN]
+Id=30

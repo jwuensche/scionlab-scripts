@@ -1,0 +1,10 @@
+[Match]
+Name=eno1
+
+[Network]
+DHCP=ipv4
+LinkLocalAddressing=ipv6
+
+[DHCP]
+RouteMetric=100
+UseMTU=true

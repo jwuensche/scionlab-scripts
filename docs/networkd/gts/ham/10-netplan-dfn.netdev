@@ -1,0 +1,6 @@
+[NetDev]
+Name=dfn
+Kind=vlan
+
+[VLAN]
+Id=26

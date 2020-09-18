@@ -1,0 +1,6 @@
+[NetDev]
+Name=par
+Kind=vlan
+
+[VLAN]
+Id=30

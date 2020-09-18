@@ -1,0 +1,10 @@
+[Match]
+Name=enp5s0f0
+
+[Network]
+LinkLocalAddressing=ipv6
+VLAN=par
+VLAN=ams
+VLAN=sidn
+VLAN=switch
+VLAN=dfn

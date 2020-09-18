@@ -1,0 +1,11 @@
+[Match]
+Name=ams
+
+[Network]
+LinkLocalAddressing=ipv6
+Address=10.42.42.3/32
+ConfigureWithoutCarrier=yes
+
+[Route]
+Destination=10.42.42.1
+Gateway=0.0.0.0
