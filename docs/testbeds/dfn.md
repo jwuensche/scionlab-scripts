@@ -11,7 +11,58 @@ Registration can be completed via the [DFN webpage](https://dfn-gvs.de/login#reg
 !!! note "Info"
     For further information what you require ask the current maintainer of the fed4fire SCIONLab project.
 
-## Generate a Testbed Configuration
+## DFN Deployment DSL
+
+An already generated DSL can be found in the provided data (deployments/dfn.dsl). How to use this will be explained in the next section.
+
+## Load the Testbed Configuration and Run it
+
+  With the config generated login on [DFN-GVS](https://dfn-gvs.de) and go to the `Types` tab, and click `Add` in the top right.
+
+  You'll see a textfield in which you can copy your configuration.
+  ![DFN Add tab](../img/dfn0.png)
+
+  Insert the output of `gts-port-cfg` into the text field (here the example from above will be used again)
+  
+  ![DFN Add config](../img/dfn1.png)
+  
+  Click submit and you'll get referred to the `Types` tab again, with the new configuration in place now.
+  
+  ![DFN Type tab](../img/dfn2.png)
+  
+  Reserve the resources and wait for them to get allocated. The allocated testbed can then be found in the `Testbeds` tab.
+
+  When all the machines are running, indicated by the `Status` in the testbed information, you are free to proceed to the next section.
+  
+  ![DFN Active testbed](../img/dfn3.png)
+  
+  
+!!! important "TODO"
+
+## Configure DFN Machines
+
+### Retrieve the assigend IPs
+
+To get all the assigned IPs, you'll need to connect via the provided VNC interface to every host.
+
+### Connect to the DFN VPN
+
+For the initial setup it is required to connect to the machines via the maintenance network. The connection information can be found in the information field in GVS on the top right.
+
+!!! warning
+    [Be aware that the VPN uses `PPTP`, the protocol is inherently insecure.](https://wiki.archlinux.org/index.php/PPTP_Client)
+
+```bash
+$ pptpsetup --create dfn --server <DFN IP> --username scionlab --password <DFN password> --encrypt
+```
+
+!!! important "TODO"
+
+## Updating a DFN Machine
+
+!!! important "TODO"
+
+## Create Your Own Custom Testbed Configuration
 
 To generate a testbed configuration use the provided tool [gts-port-cfg](https://github.com/fin-ger/gts-port-cfg). Releases are available for the
 linux-x64 platform, additionally the tool can be build for FreeBSD, NetBSD, MacOS, and Windows, though you need to build the project yourself, a short
@@ -74,55 +125,3 @@ ip: 172.16.0.106
       location: ams
 ```
 
-
-
-## Load the Testbed Configuration and Run it
-
-  With the config generated login on [DFN-GVS](https://dfn-gvs.de) and go to the `Types` tab, and click `Add` in the top right.
-
-  You'll see a textfield in which you can copy your configuration.
-  ![DFN Add tab](../img/dfn0.png)
-
-  Insert the output of `gts-port-cfg` into the text field (here the example from above will be used again)
-  
-  ![DFN Add config](../img/dfn1.png)
-  
-  Click submit and you'll get referred to the `Types` tab again, with the new configuration in place now.
-  
-  ![DFN Type tab](../img/dfn2.png)
-  
-  Reserve the resources and wait for them to get allocated. The allocated testbed can then be found in the `Testbeds` tab.
-
-  When all the machines are running, indicated by the `Status` in the testbed information, you are free to proceed to the next section.
-  
-  ![DFN Active testbed](../img/dfn3.png)
-  
-  
-!!! important "TODO"
-
-## Configure DFN Machines
-
-### Retrieve the assigend IPs
-
-To get all the assigned IPs, you'll need to connect via the provided VNC interface to every host.
-
-### Connect to the DFN VPN
-
-For the initial setup it is required to connect to the machines via the maintenance network. The connection information can be found in the information field in GVS on the top right.
-
-!!! warning
-    [Be aware that the VPN uses `PPTP`, the protocol is inherently insecure.](https://wiki.archlinux.org/index.php/PPTP_Client)
-
-```bash
-$ pptpsetup --create dfn --server <DFN IP> --username scionlab --password <DFN password> --encrypt
-```
-
-!!! important "TODO"
-
-## Updating a DFN Machine
-
-!!! important "TODO"
-
-## Create Your Own Custom Testbed Configuration
-
-!!! important "TODO"
