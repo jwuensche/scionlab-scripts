@@ -1,11 +1,11 @@
 <?xml version='1.0'?>
-<rspec xmlns="http://www.geni.net/resources/rspec/3" type="request" generated_by="jFed RSpec Editor" generated="2020-11-26T16:41:58.881+01:00" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:delay="http://www.protogeni.net/resources/rspec/ext/delay/1" xmlns:jfed-command="http://jfed.iminds.be/rspec/ext/jfed-command/1" xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:jfed-ssh-keys="http://jfed.iminds.be/rspec/ext/jfed-ssh-keys/1" xmlns:jfed="http://jfed.iminds.be/rspec/ext/jfed/1" xmlns:sharedvlan="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd ">
+<rspec xmlns="http://www.geni.net/resources/rspec/3" type="request" generated_by="jFed RSpec Editor" generated="2020-11-27T13:17:43.403+01:00" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:delay="http://www.protogeni.net/resources/rspec/ext/delay/1" xmlns:jfed-command="http://jfed.iminds.be/rspec/ext/jfed-command/1" xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:jfed-ssh-keys="http://jfed.iminds.be/rspec/ext/jfed-ssh-keys/1" xmlns:jfed="http://jfed.iminds.be/rspec/ext/jfed/1" xmlns:sharedvlan="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd ">
   <node client_id="vw0" exclusive="true" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm">
     <sliver_type name="raw-pc">
       <disk_image name="urn:publicid:IDN+wall2.ilabt.iminds.be+image+emulab-ops:UBUNTU18-64-STD"/>
     </sliver_type>
     <hardware_type name="pcgen05"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="506.39492153780304" y="761.7841438539413"/>
     <interface client_id="vw0:if0">
       <ip address="10.44.44.1" netmask="255.255.255.0" type="ipv4"/>
     </interface>
@@ -24,7 +24,7 @@
       <disk_image name="urn:publicid:IDN+wall2.ilabt.iminds.be+image+emulab-ops:UBUNTU18-64-STD"/>
     </sliver_type>
     <hardware_type name="pcgen05"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="700" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="492.1224267426993" y="325.48561721604267"/>
     <interface client_id="vw1:if0">
       <ip address="10.44.44.2" netmask="255.255.255.0" type="ipv4"/>
     </interface>
@@ -37,35 +37,35 @@
   </node>
   <node client_id="g5k-edge0" exclusive="false" component_manager_id="urn:publicid:IDN+g5k1293-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400" y="600"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="493.82819528979553" y="1176.7110891379464"/>
     <interface client_id="g5k-edge0:if0">
       <ip address="10.1.15.7" netmask="255.255.0.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="g5k-edge1" exclusive="false" component_manager_id="urn:publicid:IDN+g5k1294-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="700" y="600"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="754.9985098254265" y="25.0"/>
     <interface client_id="g5k-edge1:if0">
       <ip address="10.1.17.7" netmask="255.255.0.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="geni-edge0" exclusive="false" component_manager_id="urn:publicid:IDN+exogenius1068-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400" y="0"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="899.284781592168" y="832.2620038860771"/>
     <interface client_id="geni-edge0:if0">
       <ip address="10.1.16.3" netmask="255.255.0.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="gts-edge0" exclusive="false" component_manager_id="urn:publicid:IDN+gts1176-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="100" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="58.0" y="878.2318798801473"/>
     <interface client_id="gts-edge0:if0">
       <ip address="10.1.1.1" netmask="255.255.0.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="gts-edge1" exclusive="false" component_manager_id="urn:publicid:IDN+gts1175-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="1000" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="147.37438218472118" y="43.920738462105376"/>
     <interface client_id="gts-edge1:if0">
       <ip address="10.1.7.1" netmask="255.255.0.0" type="ipv4"/>
     </interface>
@@ -75,10 +75,6 @@
     <interface_ref client_id="vw1:if0"/>
     <interface_ref client_id="vw0:if0"/>
     <link_type name="lan"/>
-    <property source_id="vw0:if0" dest_id="vw1:if0" capacity="10000000"/>
-    <property source_id="vw1:if0" dest_id="vw0:if0" capacity="10000000"/>
-    <property source_id="vw1:if0" dest_id="vw0:if0" capacity="10000000"/>
-    <property source_id="vw0:if0" dest_id="vw1:if0" capacity="10000000"/>
   </link>
   <link client_id="linkvlan1294">
     <component_manager name="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm"/>
@@ -86,10 +82,6 @@
     <interface_ref client_id="vw1:if1"/>
     <interface_ref client_id="g5k-edge1:if0"/>
     <link_type name="lan"/>
-    <property source_id="g5k-edge1:if0" dest_id="vw1:if1" capacity="10000000"/>
-    <property source_id="vw1:if1" dest_id="g5k-edge1:if0" capacity="10000000"/>
-    <property source_id="vw1:if1" dest_id="g5k-edge1:if0" capacity="10000000"/>
-    <property source_id="g5k-edge1:if0" dest_id="vw1:if1" capacity="10000000"/>
   </link>
   <link client_id="linkvlan1293">
     <component_manager name="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm"/>
@@ -97,10 +89,6 @@
     <interface_ref client_id="vw0:if1"/>
     <interface_ref client_id="g5k-edge0:if0"/>
     <link_type name="lan"/>
-    <property source_id="g5k-edge0:if0" dest_id="vw0:if1" capacity="10000000"/>
-    <property source_id="vw0:if1" dest_id="g5k-edge0:if0" capacity="10000000"/>
-    <property source_id="vw0:if1" dest_id="g5k-edge0:if0" capacity="10000000"/>
-    <property source_id="g5k-edge0:if0" dest_id="vw0:if1" capacity="10000000"/>
   </link>
   <link client_id="linkvlan1068">
     <component_manager name="urn:publicid:IDN+exogenius1068-edge.ilabt.iminds.be+authority+cm"/>
@@ -108,10 +96,6 @@
     <interface_ref client_id="geni-edge0:if0"/>
     <interface_ref client_id="vw0:if2"/>
     <link_type name="lan"/>
-    <property source_id="geni-edge0:if0" dest_id="vw0:if2" capacity="10000000"/>
-    <property source_id="vw0:if2" dest_id="geni-edge0:if0" capacity="10000000"/>
-    <property source_id="geni-edge0:if0" dest_id="vw0:if2" capacity="10000000"/>
-    <property source_id="vw0:if2" dest_id="geni-edge0:if0" capacity="10000000"/>
   </link>
   <link client_id="linkvlan1176">
     <component_manager name="urn:publicid:IDN+gts1176-edge.ilabt.iminds.be+authority+cm"/>
@@ -121,8 +105,6 @@
     <link_type name="lan"/>
     <property source_id="gts-edge0:if0" dest_id="vw0:if3" capacity="10000000"/>
     <property source_id="vw0:if3" dest_id="gts-edge0:if0" capacity="10000000"/>
-    <property source_id="gts-edge0:if0" dest_id="vw0:if3" capacity="10000000"/>
-    <property source_id="vw0:if3" dest_id="gts-edge0:if0" capacity="10000000"/>
   </link>
   <link client_id="linkvlan1175">
     <component_manager name="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm"/>
@@ -130,9 +112,5 @@
     <interface_ref client_id="vw1:if3"/>
     <interface_ref client_id="gts-edge1:if0"/>
     <link_type name="lan"/>
-    <property source_id="gts-edge1:if0" dest_id="vw1:if3" capacity="10000000"/>
-    <property source_id="vw1:if3" dest_id="gts-edge1:if0" capacity="10000000"/>
-    <property source_id="vw1:if3" dest_id="gts-edge1:if0" capacity="10000000"/>
-    <property source_id="gts-edge1:if0" dest_id="vw1:if3" capacity="10000000"/>
   </link>
 </rspec>
