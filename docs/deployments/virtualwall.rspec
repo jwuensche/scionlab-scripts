@@ -1,11 +1,12 @@
 <?xml version='1.0'?>
-<rspec xmlns="http://www.geni.net/resources/rspec/3" type="request" generated_by="jFed RSpec Editor" generated="2020-11-27T13:30:25.043+01:00" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:delay="http://www.protogeni.net/resources/rspec/ext/delay/1" xmlns:jfed-command="http://jfed.iminds.be/rspec/ext/jfed-command/1" xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:jfed-ssh-keys="http://jfed.iminds.be/rspec/ext/jfed-ssh-keys/1" xmlns:jfed="http://jfed.iminds.be/rspec/ext/jfed/1" xmlns:sharedvlan="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd ">
+<rspec xmlns="http://www.geni.net/resources/rspec/3" type="request" generated_by="jFed RSpec Editor" generated="2020-12-01T13:34:03.267+01:00" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:delay="http://www.protogeni.net/resources/rspec/ext/delay/1" xmlns:jfed-command="http://jfed.iminds.be/rspec/ext/jfed-command/1" xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:jfed-ssh-keys="http://jfed.iminds.be/rspec/ext/jfed-ssh-keys/1" xmlns:jfed="http://jfed.iminds.be/rspec/ext/jfed/1" xmlns:sharedvlan="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd ">
+  <emulab:routable_pool client_id="public-ips" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" count="2" type="any" x="150.0" y="150.0"/>
   <node client_id="vw0" exclusive="true" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm">
     <sliver_type name="raw-pc">
       <disk_image name="urn:publicid:IDN+wall2.ilabt.iminds.be+image+emulab-ops:UBUNTU18-64-STD"/>
     </sliver_type>
     <hardware_type name="pcgen05"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400.0" y="300.0"/>
     <interface client_id="vw0:if0">
       <ip address="10.44.44.1" netmask="255.255.255.0" type="ipv4"/>
     </interface>
@@ -24,7 +25,7 @@
       <disk_image name="urn:publicid:IDN+wall2.ilabt.iminds.be+image+emulab-ops:UBUNTU18-64-STD"/>
     </sliver_type>
     <hardware_type name="pcgen05"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="700" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="700.0" y="300.0"/>
     <interface client_id="vw1:if0">
       <ip address="10.44.44.2" netmask="255.255.255.0" type="ipv4"/>
     </interface>
@@ -37,35 +38,35 @@
   </node>
   <node client_id="g5k-edge0" exclusive="false" component_manager_id="urn:publicid:IDN+g5k1293-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400" y="500"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400.0" y="600.0"/>
     <interface client_id="g5k-edge0:if0">
       <ip address="10.1.15.7" netmask="255.255.255.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="g5k-edge1" exclusive="false" component_manager_id="urn:publicid:IDN+g5k1294-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="700" y="500"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="700.0" y="600.0"/>
     <interface client_id="g5k-edge1:if0">
       <ip address="10.1.17.7" netmask="255.255.255.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="geni-edge0" exclusive="false" component_manager_id="urn:publicid:IDN+exogenius1068-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400" y="100"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="400.0" y="100.0"/>
     <interface client_id="geni-edge0:if0">
       <ip address="10.1.16.3" netmask="255.255.255.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="gts-edge0" exclusive="false" component_manager_id="urn:publicid:IDN+gts1176-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="100" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="100.0" y="300.0"/>
     <interface client_id="gts-edge0:if0">
       <ip address="10.1.1.1" netmask="255.255.255.0" type="ipv4"/>
     </interface>
   </node>
   <node client_id="gts-edge1" exclusive="false" component_manager_id="urn:publicid:IDN+gts1175-edge.ilabt.iminds.be+authority+cm">
     <sliver_type name="fake"/>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="1000" y="300"/>
+    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="1000.0" y="300.0"/>
     <interface client_id="gts-edge1:if0">
       <ip address="10.1.7.1" netmask="255.255.255.0" type="ipv4"/>
     </interface>
