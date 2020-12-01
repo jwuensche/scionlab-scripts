@@ -30,7 +30,8 @@ setup_public_ip() {
     modprobe 8021q
     vconfig add "${pub_dev}" "${vlan}"
     ifconfig "$vlan${vlan}" "${pub_ip}" netmask 255.255.255.192
-    route del default gw "${GW}" && route add default gw "${gateway}"
+    route del default gw "${GW}" || echo "Not deleting default gateway since none existed"
+    route add default gw "${gateway}" || true
 
     #Add on reboot
     echo 8021q | sudo tee -a /etc/modules
