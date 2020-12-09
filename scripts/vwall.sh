@@ -10,6 +10,8 @@ then
     exit 1
 fi
 
+GW=$(route -n | grep '^0.0.0.0' | grep UG | awk '{print $2}')
+
 setup_public_ip() {
     vlan=$1
     gateway=$2
@@ -24,6 +26,7 @@ setup_public_ip() {
         select ip in $(${GENI_GET_INFO} pubip)
         do
             pub_ip="${ip}"
+            break
         done
     else
         pub_ip=$(${GENI_GET_INFO} pubip)
@@ -32,7 +35,7 @@ setup_public_ip() {
     #Add now
     modprobe 8021q
     vconfig add "${pub_dev}" "${vlan}"
-    ifconfig "$vlan${vlan}" "${pub_ip}" netmask 255.255.255.192
+    ifconfig "vlan${vlan}" "${pub_ip}" netmask 255.255.255.192
     route del default gw "${GW}" || echo "Not deleting default gateway since none existed"
     route add default gw "${gateway}" || true
 
